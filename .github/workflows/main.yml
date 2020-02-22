@@ -16,3 +16,4 @@ jobs:
         env:
           CYPRESS_BASE_URL: 'http://localhost:5000/'
           CYPRESS_TEST_ENV: ${{ secrets.TEST_ENV }}
+          CYPRESS_TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
