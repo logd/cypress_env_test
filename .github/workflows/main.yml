@@ -10,4 +10,6 @@ jobs:
       - name: Cypress run with env
         uses: cypress-io/github-action@v1
         with:
+          build: yarn build
+          start: yarn serve -s build
           env: TEST_ENV=${{ secrets.TEST_ENV }}
